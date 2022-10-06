@@ -5,17 +5,17 @@ Lib for C/C++ that make editing registry a lot easier
 
 Create key
 ```
-SRCreateKey(HKEY_LOCAL_MACHINE, N"SYSTEM\\Setup\\LabConfig");
+SRCreateKey(HKEY_LOCAL_MACHINE, "SYSTEM\\Setup\\LabConfig");
 ```
 Delete key
 ```
-SRDeleteKey(HKEY_LOCAL_MACHINE, N"SYSTEM\\Setup\\LabConfig");
+SRDeleteKey(HKEY_LOCAL_MACHINE, L"SYSTEM\\Setup\\LabConfig");
 ```
 Create value or edit (string)
 ```
-SRCreateValue_STRING(HKEY_LOCAL_MACHINE, N"SYSTEM\\Setup\\LabConfig", N"TEST", N"This is a test");
+SRCreateValue_STRING(HKEY_LOCAL_MACHINE, L"SYSTEM\\Setup\\LabConfig", L"TEST", L"This is a test");
 ```
 Create value or edit (DWORD)
 ```
-SRCreateValue_DWORD(HKEY_LOCAL_MACHINE, N"SYSTEM\\Setup\\LabConfig", N"BypassTPMCheck", 0x000001);
+SRCreateValue_DWORD(HKEY_LOCAL_MACHINE, L"SYSTEM\\Setup\\LabConfig", L"BypassTPMCheck", 0x000001);
 ```
