@@ -12,10 +12,10 @@ void SRDeleteKey(struct HKEY__ *a, LPCWSTR b)
   RegCreateKeyExW(a, b, 0, NULL, REG_OPTION_NON_VOLATILE, KEY_WRITE, NULL, &hKey, NULL);
 }
 
-void SRCreateValue_DWORD(struct HKEY__ *a, LPCWSTR b, LPCWSTR v, long *c)
+void SRCreateValue_DWORD(struct HKEY__ *a, LPCWSTR b, LPCWSTR v, DWORD c)
 {
     HKEY key;
-    RegOpenKeyExW(a, b, 0, KEY_SET_VALUE, &key);
+    RegOpenKeyExW(a, b, 0, KEY_SET_VALUE | KEY_WOW64_64KEY, &key);
     RegSetValueExW(key, v, 0, REG_DWORD, (LPBYTE)&c, sizeof(DWORD));
     RegCloseKey(key);
 }
