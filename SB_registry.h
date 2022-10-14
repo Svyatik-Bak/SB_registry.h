@@ -27,5 +27,3 @@ void SRCreateValue_STRING(struct HKEY__ *HKEY1, LPCWSTR path, LPCWSTR ValueName,
     RegSetValueExW(key, ValueName, 0, REG_SZ, (const BYTE*)Value, (lstrlen(Value)+1) * sizeof(TCHAR));
     RegCloseKey(key);
 }
-
-//licensegpl
