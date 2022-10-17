@@ -1,6 +1,9 @@
 # SB_registry.h
 Lib for C/C++ that make editing registry a lot easier
 
+# [Download](https://github.com/Svyatik-Bak/SB_registry.h/archive/refs/heads/main.zip)
+# git: https://github.com/Svyatik-Bak/SB_registry.h.git
+
 # Syntax
 
 Create key
