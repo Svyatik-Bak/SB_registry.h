@@ -14,7 +14,7 @@ Lib for C/C++ that make editing registry a lot easier
 
 Create key
 ```
-SRCreateKey(HKEY_LOCAL_MACHINE, "SYSTEM\\Setup\\LabConfig");
+SRCreateKey(HKEY_LOCAL_MACHINE, L"SYSTEM\\Setup\\LabConfig");
 ```
 Delete key
 ```
