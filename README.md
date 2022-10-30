@@ -1,9 +1,3 @@
-# ANNOUNCEMENT!!!!
-Coming soon this project will closed
-
-### ANNOUNCEMENT2
-license will be changed to "The Unlicense"
-
 # SB_registry.h
 Lib for C/C++ that make editing registry a lot easier
 
